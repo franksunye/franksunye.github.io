@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ye Sun | franksunye</title>
-  <meta name="description" content="Ye Sun's personal homepage: software, product thinking, automation, open source, and selected work." />
+  <meta name="description" content="Ye Sun builds AI-native consumer products, B2B workflow systems, enterprise AI prototypes, and developer tools." />
   <meta property="og:title" content="Ye Sun | franksunye" />
-  <meta property="og:description" content="Personal homepage of Ye Sun, also known as franksunye on GitHub." />
+  <meta property="og:description" content="AI-native consumer products, B2B workflow systems, enterprise AI prototypes, and developer tools by Ye Sun." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://franksunye.github.io/" />
   <style>
@@ -161,22 +161,86 @@
 
     section { margin-top: 28px; }
 
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 18px;
+      margin: 0 0 18px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      max-width: 650px;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
 
-    .card {
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card, .project-card {
       padding: 26px;
       border: 1px solid var(--border);
       background: rgba(15, 23, 42, 0.54);
       border-radius: 24px;
     }
 
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-height: 230px;
+    }
+
+    .project-card h3 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0;
+    }
+
+    .project-card h3 a {
+      color: var(--text);
+    }
+
+    .project-card h3 a:hover {
+      color: var(--accent);
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    .badge {
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 4px 9px;
+      font-size: 12px;
+    }
+
+    .stat {
+      color: var(--accent);
+      font-weight: 800;
+      white-space: nowrap;
+      font-size: 13px;
+    }
+
     h2 {
       font-size: 28px;
-      margin: 0 0 18px;
+      margin: 0;
       letter-spacing: -0.03em;
     }
 
@@ -214,7 +278,9 @@
       header, .hero { grid-template-columns: 1fr; }
       header { align-items: flex-start; flex-direction: column; margin-bottom: 36px; }
       .intro { padding: 32px; }
-      .grid { grid-template-columns: 1fr; }
+      .grid, .projects-grid { grid-template-columns: 1fr; }
+      .section-heading { display: block; }
+      .section-heading p { margin-top: 8px; }
     }
   </style>
 </head>
@@ -227,7 +293,7 @@
       </a>
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#work">Work</a>
+        <a href="#products">Products</a>
         <a href="#focus">Focus</a>
         <a href="#contact">Contact</a>
         <a href="https://github.com/franksunye">GitHub</a>
@@ -236,13 +302,14 @@
 
     <div class="hero">
       <section class="panel intro" id="about">
-        <div class="eyebrow">Personal Homepage</div>
+        <div class="eyebrow">AI Product Builder</div>
         <h1>Hello, I’m Ye Sun.</h1>
         <p class="lead">
-          I’m franksunye on GitHub. I care about building useful software, connecting product thinking with engineering execution, and using automation to turn ideas into practical systems.
+          I build AI-native consumer products, B2B workflow systems, enterprise AI prototypes, and developer tools. My work spans virtual try-on, stock analysis, AI-powered operations, sales enablement, and high-performance financial data tooling.
         </p>
         <div class="actions">
-          <a class="button primary" href="https://github.com/franksunye">View GitHub</a>
+          <a class="button primary" href="#products">View Products</a>
+          <a class="button" href="https://github.com/franksunye">View GitHub</a>
           <a class="button" href="#contact">Contact Me</a>
         </div>
       </section>
@@ -251,39 +318,108 @@
         <div>
           <img src="https://avatars.githubusercontent.com/u/1393601?v=4" alt="Ye Sun GitHub avatar" />
           <h2>franksunye</h2>
-          <p class="meta">Builder · Software · Product · Automation</p>
+          <p class="meta">Founder-minded Builder · AI Products · Enterprise Systems · Data Tools</p>
           <p class="meta">GitHub: @franksunye</p>
           <p class="meta">Email: <span>franksunye [at] hotmail [dot] com</span></p>
         </div>
         <div class="tags" aria-label="Interests">
-          <span class="tag">Software Engineering</span>
-          <span class="tag">Product Thinking</span>
-          <span class="tag">Automation</span>
-          <span class="tag">Open Source</span>
+          <span class="tag">AI Native Products</span>
+          <span class="tag">B2C Apps</span>
+          <span class="tag">B2B Workflows</span>
+          <span class="tag">Enterprise AI</span>
+          <span class="tag">Data Tooling</span>
         </div>
       </aside>
     </div>
 
-    <section id="work" class="grid">
-      <article class="card">
-        <h3>What I Build</h3>
-        <p class="muted">I’m interested in practical software projects that solve real problems, reduce repeated work, and make complex workflows easier to operate.</p>
-      </article>
-      <article class="card">
-        <h3>How I Think</h3>
-        <p class="muted">I like combining product clarity with engineering discipline: understand the user, define the problem, ship a working solution, then improve it through feedback.</p>
-      </article>
-      <article class="card">
-        <h3>Where I Share</h3>
-        <p class="muted">This site is a home base for my GitHub projects, technical experiments, notes, and future writing around software and product building.</p>
-      </article>
+    <section id="products">
+      <div class="section-heading">
+        <h2>Selected Products</h2>
+        <p>Core products and prototypes that represent my recent work, from consumer-facing AI applications to enterprise workflow systems.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3><a href="https://visutry.com">VisuTry</a> <span class="stat">2K users</span></h3>
+          <p class="muted">A consumer AI virtual try-on product that I refined from last year into this year, focused on making visual try-on practical and accessible for everyday users.</p>
+          <div class="project-meta">
+            <span class="badge">B2C</span>
+            <span class="badge">AI Try-On</span>
+            <span class="badge">Productized</span>
+            <span class="badge">visutry.com</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3><a href="https://ziso.cc">StockWise</a></h3>
+          <p class="muted">A consumer stock analysis product designed to help users explore markets, understand signals, and work with investment-related information in a clearer way.</p>
+          <div class="project-meta">
+            <span class="badge">B2C</span>
+            <span class="badge">Stock Analysis</span>
+            <span class="badge">Data Product</span>
+            <span class="badge">ziso.cc</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3><a href="https://runory.vercel.app">Runory</a></h3>
+          <p class="muted">A promising B2B product exploring AI-powered business workflows and operational execution, built around turning business context into usable actions.</p>
+          <div class="project-meta">
+            <span class="badge">B2B</span>
+            <span class="badge">AI Workflow</span>
+            <span class="badge">Operations</span>
+            <span class="badge">runory.vercel.app</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3><a href="https://github.com/franksunye/quantdb">QuantDB</a> <span class="stat">5K PyPI downloads</span></h3>
+          <p class="muted">A mature Python stock-data toolkit that improves financial data access with intelligent caching, designed for faster and more reliable quantitative data workflows.</p>
+          <div class="project-meta">
+            <span class="badge">Python</span>
+            <span class="badge">Financial Data</span>
+            <span class="badge">PyPI</span>
+            <span class="badge">Developer Tool</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3><a href="https://github.com/franksunye/GeoCMS">GeoCMS</a></h3>
+          <p class="muted">A complete enterprise prototype for AI-powered sales-call analysis, ranking, and sales enablement, built to help teams convert raw conversations into operational insight.</p>
+          <div class="project-meta">
+            <span class="badge">Enterprise AI</span>
+            <span class="badge">Sales Enablement</span>
+            <span class="badge">Voice Analysis</span>
+            <span class="badge">Prototype</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3><a href="https://github.com/franksunye/fs-aol">fs-aol</a></h3>
+          <p class="muted">A complete enterprise AI prototype for a next-generation system of record, where AI helps transform recorded business state into system actions.</p>
+          <div class="project-meta">
+            <span class="badge">Enterprise AI</span>
+            <span class="badge">System of Record</span>
+            <span class="badge">System Action</span>
+            <span class="badge">Prototype</span>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="focus" class="card">
-      <h2>Current Focus</h2>
-      <p class="muted">
-        I’m exploring the intersection of software engineering, AI-assisted workflows, automation, and product development. I value tools that are simple to use, reliable in practice, and useful enough to become part of everyday work.
-      </p>
+    <section id="focus" class="grid">
+      <article class="card">
+        <h3>Consumer AI Products</h3>
+        <p class="muted">I build products that use AI to create direct user value, with attention to usability, adoption, and real-world product iteration.</p>
+      </article>
+      <article class="card">
+        <h3>Enterprise AI Systems</h3>
+        <p class="muted">I explore how AI can support operational decision-making, sales enablement, workflow automation, and the next generation of enterprise systems.</p>
+      </article>
+      <article class="card">
+        <h3>Data & Developer Tools</h3>
+        <p class="muted">I also build practical tools for data-heavy workflows, especially where performance, caching, and product packaging matter.</p>
+      </article>
     </section>
 
     <section id="contact" class="card">
