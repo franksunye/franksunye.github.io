@@ -1,0 +1,37 @@
+# Ye Sun / franksunye
+
+Ye Sun, also known as franksunye, is an AI product builder with 20+ years of industry experience across CRM, FSM, marketing automation, data visualization, product design, architecture design, software development, testing, and product operations.
+
+## Primary profile
+
+- Homepage: https://franksunye.github.io/
+- GitHub: https://github.com/franksunye
+- X: https://x.com/franksunye
+
+## Areas of expertise
+
+- CRM
+- Field Service Management (FSM)
+- Marketing Automation
+- Data Visualization
+- Enterprise AI
+- AI-native products
+- B2B workflow systems
+- Product design
+- Architecture design
+- Software development
+- Testing
+- Product operations
+
+## Selected products
+
+- VisuTry: AI virtual try-on for everyday outfit decisions. Website: https://visutry.com
+- StockWise: Clearer stock insights for individual investors. Website: https://ziso.cc
+- Runory: AI-powered execution layer for business operations. Website: https://runory.vercel.app
+- QuantDB: A mature Python stock-data toolkit that improves financial data access with intelligent caching. Repository: https://github.com/franksunye/quantdb
+- GeoCMS: An enterprise prototype for AI-powered sales-call analysis, ranking, and sales enablement. Repository: https://github.com/franksunye/GeoCMS
+- fs-aol: An enterprise AI prototype for a next-generation system of record that turns recorded business state into system actions. Repository: https://github.com/franksunye/fs-aol
+
+## Contact
+
+- Email: franksunye [at] hotmail [dot] com
