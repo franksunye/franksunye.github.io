@@ -183,13 +183,9 @@
 
     .hero {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.1fr 0.9fr;
       gap: 28px;
       align-items: stretch;
-    }
-
-    .hero > section {
-      margin-top: 0;
     }
 
     .panel {
@@ -212,7 +208,7 @@
     }
 
     h1 {
-      font-size: clamp(42px, 8vw, 86px);
+      font-size: clamp(42px, 8vw, 84px);
       line-height: 0.95;
       margin: 0 0 24px;
       letter-spacing: -0.06em;
@@ -222,15 +218,7 @@
       color: var(--muted);
       font-size: clamp(18px, 2vw, 22px);
       max-width: 760px;
-      margin: 0 0 24px;
-    }
-
-    .experience-note {
-      color: var(--text);
-      border-left: 3px solid var(--accent);
-      padding-left: 16px;
-      margin: 0 0 32px;
-      max-width: 760px;
+      margin: 0 0 28px;
     }
 
     .actions {
@@ -293,12 +281,6 @@
       max-width: 650px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -306,7 +288,7 @@
     }
 
     .card, .project-card {
-      padding: 26px;
+      padding: 24px;
       border: 1px solid var(--border);
       background: rgba(15, 23, 42, 0.54);
       border-radius: 24px;
@@ -316,7 +298,7 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
-      min-height: 230px;
+      min-height: 168px;
     }
 
     .project-card h3 {
@@ -327,13 +309,8 @@
       margin: 0;
     }
 
-    .project-card h3 a {
-      color: var(--text);
-    }
-
-    .project-card h3 a:hover {
-      color: var(--accent);
-    }
+    .project-card h3 a { color: var(--text); }
+    .project-card h3 a:hover { color: var(--accent); }
 
     .project-meta {
       display: flex;
@@ -358,8 +335,8 @@
     }
 
     .tagline {
-      color: var(--text);
-      font-weight: 700;
+      color: var(--muted);
+      font-size: 16px;
     }
 
     h2 {
@@ -402,7 +379,7 @@
       header, .hero { grid-template-columns: 1fr; }
       header { align-items: flex-start; flex-direction: column; margin-bottom: 36px; }
       .intro { padding: 32px; }
-      .grid, .projects-grid { grid-template-columns: 1fr; }
+      .projects-grid { grid-template-columns: 1fr; }
       .section-heading { display: block; }
       .section-heading p { margin-top: 8px; }
     }
@@ -417,28 +394,24 @@
       </a>
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#products">Products</a>
+        <a href="#products">Work</a>
         <a href="#contact">Contact</a>
         <a href="https://github.com/franksunye">GitHub</a>
         <a href="https://x.com/franksunye">X</a>
       </nav>
     </header>
 
-    <div class="hero">
-      <section class="panel intro" id="about">
-        <div class="eyebrow">AI Product Builder · 20+ Years Experience</div>
+    <div class="hero" id="about">
+      <section class="panel intro">
+        <div class="eyebrow">AI Product Builder · 20+ Years</div>
         <h1>Hello, I’m Ye Sun.</h1>
         <p class="lead">
-          I build AI-native consumer products, B2B workflow systems, enterprise AI prototypes, and developer tools, with deep domain experience in CRM, FSM, marketing automation, and data visualization.
-        </p>
-        <p class="experience-note">
-          Over 20 years of industry experience across product design, architecture design, software development, testing, and product operations — from idea and system design to delivery, iteration, and growth.
+          I build AI-native products for consumer, B2B, and enterprise workflows, grounded in long-term experience across CRM, FSM, marketing automation, and data visualization.
         </p>
         <div class="actions">
-          <a class="button primary" href="#products">View Products</a>
-          <a class="button" href="#expertise">View Expertise</a>
-          <a class="button" href="https://github.com/franksunye">View GitHub</a>
+          <a class="button primary" href="#products">View Work</a>
+          <a class="button" href="https://github.com/franksunye">GitHub</a>
+          <a class="button" href="https://x.com/franksunye">X</a>
         </div>
       </section>
 
@@ -446,53 +419,32 @@
         <div>
           <img src="https://avatars.githubusercontent.com/u/1393601?v=4" alt="Ye Sun GitHub avatar" />
           <h2>franksunye</h2>
-          <p class="meta">Founder-minded Builder · Product Design · Architecture · Engineering · Operations</p>
-          <p class="meta">Domains: CRM · FSM · Marketing Automation · Data Visualization</p>
-          <p class="meta">GitHub: @franksunye</p>
-          <p class="meta">X: <a href="https://x.com/franksunye">@franksunye</a></p>
+          <p class="meta">Product Design · Architecture · Engineering · Operations</p>
+          <p class="meta">CRM · FSM · Marketing Automation · Data Visualization</p>
           <p class="meta">Email: <span>franksunye [at] hotmail [dot] com</span></p>
         </div>
-        <div class="tags" aria-label="Interests">
-          <span class="tag">CRM</span>
-          <span class="tag">FSM</span>
-          <span class="tag">Marketing Automation</span>
-          <span class="tag">Data Visualization</span>
-          <span class="tag">Enterprise AI</span>
+        <div class="tags" aria-label="Focus areas">
           <span class="tag">AI Native Products</span>
+          <span class="tag">Enterprise AI</span>
+          <span class="tag">Data Products</span>
+          <span class="tag">B2B Workflows</span>
         </div>
       </aside>
     </div>
 
-    <section id="expertise" class="grid">
-      <article class="card">
-        <h3>Domain Expertise</h3>
-        <p class="muted">CRM, field service management, marketing automation, and data visualization — with a practical focus on how business teams acquire customers, operate services, measure performance, and improve execution.</p>
-      </article>
-      <article class="card">
-        <h3>Full Product Lifecycle</h3>
-        <p class="muted">Experience across product design, architecture design, development, testing, and product operations, allowing me to connect strategy, system structure, implementation, and iteration.</p>
-      </article>
-      <article class="card">
-        <h3>AI + Business Systems</h3>
-        <p class="muted">I explore how AI can become part of real business systems: analyzing records, generating actions, ranking performance, assisting workflows, and turning operational data into decisions.</p>
-      </article>
-    </section>
-
     <section id="products">
       <div class="section-heading">
-        <h2>Selected Products</h2>
-        <p>Core products and prototypes that represent my recent work, from consumer-facing AI applications to enterprise workflow systems.</p>
+        <h2>Selected Work</h2>
+        <p>A few products and prototypes that represent my recent direction.</p>
       </div>
 
       <div class="projects-grid">
         <article class="project-card">
           <h3><a href="https://visutry.com">VisuTry</a> <span class="stat">2K users</span></h3>
           <p class="tagline">AI virtual try-on for everyday outfit decisions.</p>
-          <p class="muted">A consumer AI virtual try-on product refined from last year into this year, focused on making visual try-on practical and accessible for everyday users.</p>
           <div class="project-meta">
             <span class="badge">B2C</span>
             <span class="badge">AI Try-On</span>
-            <span class="badge">Productized</span>
             <span class="badge">visutry.com</span>
           </div>
         </article>
@@ -500,11 +452,9 @@
         <article class="project-card">
           <h3><a href="https://ziso.cc">StockWise</a></h3>
           <p class="tagline">Clearer stock insights for individual investors.</p>
-          <p class="muted">A consumer stock analysis product designed to help users explore markets, understand signals, and work with investment-related information in a clearer way.</p>
           <div class="project-meta">
             <span class="badge">B2C</span>
             <span class="badge">Stock Analysis</span>
-            <span class="badge">Data Product</span>
             <span class="badge">ziso.cc</span>
           </div>
         </article>
@@ -512,45 +462,38 @@
         <article class="project-card">
           <h3><a href="https://runory.vercel.app">Runory</a></h3>
           <p class="tagline">AI-powered execution layer for business operations.</p>
-          <p class="muted">A promising B2B product exploring AI-powered business workflows and operational execution, built around turning business context into usable actions.</p>
           <div class="project-meta">
             <span class="badge">B2B</span>
             <span class="badge">AI Workflow</span>
-            <span class="badge">Operations</span>
             <span class="badge">runory.vercel.app</span>
           </div>
         </article>
 
         <article class="project-card">
           <h3><a href="https://github.com/franksunye/quantdb">QuantDB</a> <span class="stat">5K PyPI downloads</span></h3>
-          <p class="muted">A mature Python stock-data toolkit that improves financial data access with intelligent caching, designed for faster and more reliable quantitative data workflows.</p>
+          <p class="tagline">Fast, cached financial data tooling for Python.</p>
           <div class="project-meta">
             <span class="badge">Python</span>
             <span class="badge">Financial Data</span>
             <span class="badge">PyPI</span>
-            <span class="badge">Developer Tool</span>
           </div>
         </article>
 
         <article class="project-card">
           <h3><a href="https://github.com/franksunye/GeoCMS">GeoCMS</a></h3>
-          <p class="muted">A complete enterprise prototype for AI-powered sales-call analysis, ranking, and sales enablement, built to help teams convert raw conversations into operational insight.</p>
+          <p class="tagline">AI sales-call analysis and ranking for sales enablement.</p>
           <div class="project-meta">
             <span class="badge">Enterprise AI</span>
             <span class="badge">Sales Enablement</span>
-            <span class="badge">Voice Analysis</span>
-            <span class="badge">Prototype</span>
           </div>
         </article>
 
         <article class="project-card">
           <h3><a href="https://github.com/franksunye/fs-aol">fs-aol</a></h3>
-          <p class="muted">A complete enterprise AI prototype for a next-generation system of record, where AI helps transform recorded business state into system actions.</p>
+          <p class="tagline">A next-generation system of record that turns state into action.</p>
           <div class="project-meta">
             <span class="badge">Enterprise AI</span>
             <span class="badge">System of Record</span>
-            <span class="badge">System Action</span>
-            <span class="badge">Prototype</span>
           </div>
         </article>
       </div>
