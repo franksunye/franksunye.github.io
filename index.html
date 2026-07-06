@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ye Sun | franksunye</title>
-  <meta name="description" content="Ye Sun builds AI-native consumer products, B2B workflow systems, enterprise AI prototypes, and developer tools." />
+  <meta name="description" content="Ye Sun builds AI-native products for CRM, FSM, marketing automation, data visualization, and enterprise workflows, with 20+ years of industry experience." />
   <meta property="og:title" content="Ye Sun | franksunye" />
-  <meta property="og:description" content="AI-native consumer products, B2B workflow systems, enterprise AI prototypes, and developer tools by Ye Sun." />
+  <meta property="og:description" content="AI-native products, CRM, FSM, marketing automation, data visualization, and enterprise systems by Ye Sun." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://franksunye.github.io/" />
   <style>
@@ -110,8 +110,16 @@
     .lead {
       color: var(--muted);
       font-size: clamp(18px, 2vw, 22px);
-      max-width: 720px;
+      max-width: 760px;
+      margin: 0 0 24px;
+    }
+
+    .experience-note {
+      color: var(--text);
+      border-left: 3px solid var(--accent);
+      padding-left: 16px;
       margin: 0 0 32px;
+      max-width: 760px;
     }
 
     .actions {
@@ -293,8 +301,8 @@
       </a>
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
         <a href="#products">Products</a>
-        <a href="#focus">Focus</a>
         <a href="#contact">Contact</a>
         <a href="https://github.com/franksunye">GitHub</a>
       </nav>
@@ -302,15 +310,18 @@
 
     <div class="hero">
       <section class="panel intro" id="about">
-        <div class="eyebrow">AI Product Builder</div>
+        <div class="eyebrow">AI Product Builder · 20+ Years Experience</div>
         <h1>Hello, I’m Ye Sun.</h1>
         <p class="lead">
-          I build AI-native consumer products, B2B workflow systems, enterprise AI prototypes, and developer tools. My work spans virtual try-on, stock analysis, AI-powered operations, sales enablement, and high-performance financial data tooling.
+          I build AI-native consumer products, B2B workflow systems, enterprise AI prototypes, and developer tools, with deep domain experience in CRM, FSM, marketing automation, and data visualization.
+        </p>
+        <p class="experience-note">
+          Over 20 years of industry experience across product design, architecture design, software development, testing, and product operations — from idea and system design to delivery, iteration, and growth.
         </p>
         <div class="actions">
           <a class="button primary" href="#products">View Products</a>
+          <a class="button" href="#expertise">View Expertise</a>
           <a class="button" href="https://github.com/franksunye">View GitHub</a>
-          <a class="button" href="#contact">Contact Me</a>
         </div>
       </section>
 
@@ -318,19 +329,36 @@
         <div>
           <img src="https://avatars.githubusercontent.com/u/1393601?v=4" alt="Ye Sun GitHub avatar" />
           <h2>franksunye</h2>
-          <p class="meta">Founder-minded Builder · AI Products · Enterprise Systems · Data Tools</p>
+          <p class="meta">Founder-minded Builder · Product Design · Architecture · Engineering · Operations</p>
+          <p class="meta">Domains: CRM · FSM · Marketing Automation · Data Visualization</p>
           <p class="meta">GitHub: @franksunye</p>
           <p class="meta">Email: <span>franksunye [at] hotmail [dot] com</span></p>
         </div>
         <div class="tags" aria-label="Interests">
-          <span class="tag">AI Native Products</span>
-          <span class="tag">B2C Apps</span>
-          <span class="tag">B2B Workflows</span>
+          <span class="tag">CRM</span>
+          <span class="tag">FSM</span>
+          <span class="tag">Marketing Automation</span>
+          <span class="tag">Data Visualization</span>
           <span class="tag">Enterprise AI</span>
-          <span class="tag">Data Tooling</span>
+          <span class="tag">AI Native Products</span>
         </div>
       </aside>
     </div>
+
+    <section id="expertise" class="grid">
+      <article class="card">
+        <h3>Domain Expertise</h3>
+        <p class="muted">CRM, field service management, marketing automation, and data visualization — with a practical focus on how business teams acquire customers, operate services, measure performance, and improve execution.</p>
+      </article>
+      <article class="card">
+        <h3>Full Product Lifecycle</h3>
+        <p class="muted">Experience across product design, architecture design, development, testing, and product operations, allowing me to connect strategy, system structure, implementation, and iteration.</p>
+      </article>
+      <article class="card">
+        <h3>AI + Business Systems</h3>
+        <p class="muted">I explore how AI can become part of real business systems: analyzing records, generating actions, ranking performance, assisting workflows, and turning operational data into decisions.</p>
+      </article>
+    </section>
 
     <section id="products">
       <div class="section-heading">
@@ -341,7 +369,7 @@
       <div class="projects-grid">
         <article class="project-card">
           <h3><a href="https://visutry.com">VisuTry</a> <span class="stat">2K users</span></h3>
-          <p class="muted">A consumer AI virtual try-on product that I refined from last year into this year, focused on making visual try-on practical and accessible for everyday users.</p>
+          <p class="muted">A consumer AI virtual try-on product refined from last year into this year, focused on making visual try-on practical and accessible for everyday users.</p>
           <div class="project-meta">
             <span class="badge">B2C</span>
             <span class="badge">AI Try-On</span>
@@ -405,21 +433,6 @@
           </div>
         </article>
       </div>
-    </section>
-
-    <section id="focus" class="grid">
-      <article class="card">
-        <h3>Consumer AI Products</h3>
-        <p class="muted">I build products that use AI to create direct user value, with attention to usability, adoption, and real-world product iteration.</p>
-      </article>
-      <article class="card">
-        <h3>Enterprise AI Systems</h3>
-        <p class="muted">I explore how AI can support operational decision-making, sales enablement, workflow automation, and the next generation of enterprise systems.</p>
-      </article>
-      <article class="card">
-        <h3>Data & Developer Tools</h3>
-        <p class="muted">I also build practical tools for data-heavy workflows, especially where performance, caching, and product packaging matter.</p>
-      </article>
     </section>
 
     <section id="contact" class="card">
