@@ -1,22 +1,24 @@
-# franksunye.github.io
+# Ye Sun | franksunye
 
-Ye Sun 的 GitHub Pages 个人主页。
+This repository hosts the personal GitHub Pages site of Ye Sun, also known as `franksunye`.
 
-访问地址：<https://franksunye.github.io/>
+Website: <https://franksunye.github.io/>
 
-## 使用方式
+## About
 
-1. 在 GitHub 新建公开仓库：`franksunye.github.io`
-2. 上传本目录中的 `index.html` 和 `README.md`
-3. 进入仓库 `Settings → Pages`，确认发布源为 `main` 分支根目录
-4. 几分钟后访问 `https://franksunye.github.io/`
+I build AI-native products for consumer, B2B, and enterprise workflows, grounded in long-term experience across CRM, FSM, marketing automation, and data visualization.
 
-## 自定义
+## Selected Work
 
-你可以编辑 `index.html` 里的：
+- **VisuTry** — AI virtual try-on for everyday outfit decisions. <https://visutry.com>
+- **StockWise** — Clearer stock insights for individual investors. <https://ziso.cc>
+- **Runory** — AI-powered execution layer for business operations. <https://runory.vercel.app>
+- **QuantDB** — Fast, cached financial data tooling for Python. <https://github.com/franksunye/quantdb>
+- **GeoCMS** — AI sales-call analysis and ranking for sales enablement. <https://github.com/franksunye/GeoCMS>
+- **fs-aol** — A next-generation system of record that turns state into action. <https://github.com/franksunye/fs-aol>
 
-- 个人简介
-- 项目展示
-- 技术标签
-- 联系方式
-- 页面配色与样式
+## Links
+
+- GitHub: <https://github.com/franksunye>
+- X: <https://x.com/franksunye>
+- Homepage: <https://franksunye.github.io/>
