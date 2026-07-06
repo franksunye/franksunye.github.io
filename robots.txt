@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://franksunye.github.io/sitemap.xml
